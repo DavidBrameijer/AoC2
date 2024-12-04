@@ -1,0 +1,14 @@
+C:\Users\16167\Desktop\Practice Code\AoCDay2\AoCDay2\bin\Debug\net8.0\AoCDay2.exe
+C:\Users\16167\Desktop\Practice Code\AoCDay2\AoCDay2\bin\Debug\net8.0\AoCDay2.deps.json
+C:\Users\16167\Desktop\Practice Code\AoCDay2\AoCDay2\bin\Debug\net8.0\AoCDay2.runtimeconfig.json
+C:\Users\16167\Desktop\Practice Code\AoCDay2\AoCDay2\bin\Debug\net8.0\AoCDay2.dll
+C:\Users\16167\Desktop\Practice Code\AoCDay2\AoCDay2\bin\Debug\net8.0\AoCDay2.pdb
+C:\Users\16167\Desktop\Practice Code\AoCDay2\AoCDay2\obj\Debug\net8.0\AoCDay2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\16167\Desktop\Practice Code\AoCDay2\AoCDay2\obj\Debug\net8.0\AoCDay2.AssemblyInfoInputs.cache
+C:\Users\16167\Desktop\Practice Code\AoCDay2\AoCDay2\obj\Debug\net8.0\AoCDay2.AssemblyInfo.cs
+C:\Users\16167\Desktop\Practice Code\AoCDay2\AoCDay2\obj\Debug\net8.0\AoCDay2.csproj.CoreCompileInputs.cache
+C:\Users\16167\Desktop\Practice Code\AoCDay2\AoCDay2\obj\Debug\net8.0\AoCDay2.dll
+C:\Users\16167\Desktop\Practice Code\AoCDay2\AoCDay2\obj\Debug\net8.0\refint\AoCDay2.dll
+C:\Users\16167\Desktop\Practice Code\AoCDay2\AoCDay2\obj\Debug\net8.0\AoCDay2.pdb
+C:\Users\16167\Desktop\Practice Code\AoCDay2\AoCDay2\obj\Debug\net8.0\AoCDay2.genruntimeconfig.cache
+C:\Users\16167\Desktop\Practice Code\AoCDay2\AoCDay2\obj\Debug\net8.0\ref\AoCDay2.dll
