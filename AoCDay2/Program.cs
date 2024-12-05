@@ -1,4 +1,6 @@
 ﻿
+using System.ComponentModel.Design;
+
 int[][] matrix = new int[][]
 {
     new int[] {6,8,9,11,14,12},
@@ -1002,59 +1004,89 @@ new int[] {18,17,15,13,12,10,7},
 new int[] {51,48,45,42,40},
 new int[] {15,16,19,20,23,26,27},
 };
-    static bool checkMatrix(int[][] matrix)
-    {
-        int safe = 0;
+int[][] matrix2 = new int[][]
+{
+    new int[]{7,6,4,2,1},
+    new int[]{1,2,7,8,9},
+    new int[]{9,7,6,2,1},
+};
 
-        foreach (int[] row in matrix)
+static int checkMatrix(int[][] matrix)
+{
+    int safe = 0;
+    foreach (int[] row in matrix)
+    {
+        if (checkRow(row))
         {
-            if (row.Equals(row.OrderByDescending(x => x)))
-            {
-                for (int i = 0; i < row.Length; i++)
-                {
-                    if (Math.Abs(row[i] - row[i + 1]) > 3)
-                    {
-                        return false;
-                    }
-                    else
-                    {
-                        return true;
-                    }
-                    while (i == row.Length)
-                    {
-                        if (true)
-                        {
-                            safe++;
-                        }
-                    }
-                }
-            }
-            else if (row.Equals(row.OrderBy(x => x)))
-            {
-                for (int i = 0; i < row.Length; i++)
-                {
-                    if (Math.Abs(row[i] - row[i + 1]) > 3)
-                    {
-                        return false;
-                    }
-                    else
-                    {
-                        return true;
-                    }
-                    while (i == row.Length)
-                    {
-                        if (true)
-                        {
-                            safe++;
-                        }
-                    }
-                }
-            }
-            else
+            safe++;
+        }
+    }
+    return safe;
+
+}
+
+static bool checkRow(int[] row)
+{
+    if (IsSorted(row))
+    {
+        for (int i = 0; i < (row.Length - 1); i++)
+        {
+            if (Math.Abs(row[i] - row[i + 1]) > 3 || Math.Abs(row[i] - row[i + 1]) == 0)
             {
                 return false;
             }
         }
+        return true;
     }
-checkMatrix(matrix);
-Console.WriteLine(safe);
+    if (IsSortedReverse(row))
+    {
+        for (int i = 0; i < (row.Length - 1); i++)
+        {
+            if (Math.Abs(row[i] - row[i + 1]) > 3 || Math.Abs(row[i] - row[i + 1]) == 0)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    return false;
+}
+
+static bool IsSorted(int[] array)
+{
+    for (int i = 1; i < array.Length; i++)
+    {
+        if (array[i - 1] > array[i])
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+static bool IsSortedReverse(int[] array)
+{
+    for (int i = array.Length - 2; i >= 0; i--)
+    {
+        if (array[i] < array[i + 1])
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+//static bool isSafeValue(int[] row)
+//{
+//    for (int i = 0; i < (row.Length - 1); i++)
+//    {
+//        if (Math.Abs(row[i] - row[i + 1]) > 3 || Math.Abs(row[i] - row[i + 1]) == 0)
+//        {
+//            return false;
+//        }
+//        return true;
+//    }
+//    return false;
+//}
+
+//Console.WriteLine(checkMatrix(matrix));
